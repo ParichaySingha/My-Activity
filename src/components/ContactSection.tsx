@@ -76,7 +76,7 @@ const ContactSection = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50">
-            <h3 className="text-2xl font-bold text-white mb-6">Send me a message</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">Send me a message for You</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
