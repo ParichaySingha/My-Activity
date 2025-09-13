@@ -196,39 +196,41 @@ const ContactSection = () => {
                 </div>
               </motion.a>
               
-              <motion.a
-                href="tel:+918617555736"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-4 p-3 rounded-lg hover:bg-white/5 transition-all duration-300 group cursor-pointer"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
-                  <Phone className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="text-white font-semibold group-hover:text-cyan-400 transition-colors">Phone</h4>
-                  <p className="text-gray-300 group-hover:text-white transition-colors">+91 8617555736</p>
-                </div>
-              </motion.a>
-              
-              <motion.a
-                href="https://maps.google.com/?q=Siliguri+West+Bengal+India"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-4 p-3 rounded-lg hover:bg-white/5 transition-all duration-300 group cursor-pointer"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
-                  <MapPin className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="text-white font-semibold group-hover:text-cyan-400 transition-colors">Location</h4>
-                  <p className="text-gray-300 group-hover:text-white transition-colors">Siliguri West Bengal, India</p>
-                </div>
-              </motion.a>
+              <div className="grid grid-cols-2 gap-4">
+                <motion.a
+                  href="tel:+918617555736"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-4 p-3 rounded-lg hover:bg-white/5 transition-all duration-300 group cursor-pointer"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
+                    <Phone className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold group-hover:text-cyan-400 transition-colors">Phone</h4>
+                    <p className="text-gray-300 group-hover:text-white transition-colors">+91 8617555736</p>
+                  </div>
+                </motion.a>
+                
+                <motion.a
+                  href="https://maps.google.com/?q=Siliguri+West+Bengal+India"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-4 p-3 rounded-lg hover:bg-white/5 transition-all duration-300 group cursor-pointer"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
+                    <MapPin className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold group-hover:text-cyan-400 transition-colors">Location</h4>
+                    <p className="text-gray-300 group-hover:text-white transition-colors">Siliguri West Bengal, India</p>
+                  </div>
+                </motion.a>
+              </div>
             </div>
           </div>
 
