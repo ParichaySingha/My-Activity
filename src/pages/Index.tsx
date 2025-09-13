@@ -9,6 +9,7 @@ import ExperienceSection from '../components/ExperienceSection';
 import EducationSection from '../components/EducationSection';
 import ProfessionalKnowledgeGraph from '../components/ProfessionalKnowledgeGraph';
 import ContactSection from '../components/ContactSection';
+import Footer from '../components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Index = () => {
@@ -93,6 +94,8 @@ const Index = () => {
       <section id="contact" className="min-h-screen py-20">
         <ContactSection />
       </section>
+
+      <Footer />
     </div>
   );
 };
