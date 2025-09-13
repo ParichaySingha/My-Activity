@@ -394,17 +394,6 @@ const SkillFlowBuilder: React.FC<SkillFlowBuilderProps> = ({
           <Background color={isDarkMode ? '#374151' : '#e5e7eb'} gap={20} size={1} />
         </ReactFlow>
       </div>
-
-      {/* Enhanced Instructions */}
-      <div className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 text-center bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-gray-200/50 dark:border-gray-700/50 shadow-lg max-w-[calc(100%-2rem)] sm:max-w-none">
-        <div className="flex items-center justify-center gap-2 mb-2">
-          <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-purple-500" />
-          <span className="font-semibold text-gray-900 dark:text-white text-sm sm:text-base">Pro Tips</span>
-        </div>
-        <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-300">
-          Drag skills from the palette • Connect related technologies • Export your professional flow when complete
-        </p>
-      </div>
     </motion.div>;
 };
 
