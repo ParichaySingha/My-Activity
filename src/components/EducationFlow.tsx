@@ -233,26 +233,29 @@ const EducationFlow: React.FC<EducationFlowProps> = ({ onClose }) => {
       exit={{ scale: 0.95, opacity: 0 }}
       className="w-full h-full relative bg-gradient-to-br from-slate-50 to-indigo-50 dark:from-slate-900 dark:to-indigo-950"
     >
-      {/* Minimal Header */}
-      <div className="absolute top-4 left-4 right-4 z-20 flex items-center justify-between">
-        <div className="flex items-center gap-3 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm rounded-xl p-3 border border-gray-200/50 dark:border-gray-700/50 shadow-lg">
-          <div className="p-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg">
-            <GraduationCap className="w-6 h-6 text-white" />
+      {/* Optimized Header */}
+      <div className="absolute top-4 left-4 right-4 z-20">
+        <div className="flex items-center justify-between gap-4">
+          <div className="flex items-center gap-3 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm rounded-xl px-4 py-3 border border-gray-200/50 dark:border-gray-700/50 shadow-lg flex-1 min-w-0">
+            <div className="p-2 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg shadow-md flex-shrink-0">
+              <GraduationCap className="w-5 h-5 text-white" />
+            </div>
+            <div className="flex flex-col min-w-0 flex-1">
+              <h2 className="text-lg font-bold text-gray-900 dark:text-white leading-tight truncate">Learning Journey Network</h2>
+              <p className="text-xs text-gray-600 dark:text-gray-400 font-medium truncate">Interactive Educational Flow</p>
+            </div>
           </div>
-          <div>
-            <h2 className="text-xl font-bold text-gray-900 dark:text-white">Learning Journey Network</h2>
-            <p className="text-sm text-gray-600 dark:text-gray-400">Interactive Educational Flow</p>
-          </div>
-        </div>
-        
-        <div className="flex items-center gap-3">
-          <div className="bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm rounded-xl p-2 border border-gray-200/50 dark:border-gray-700/50 shadow-lg">
-            <button
-              onClick={onClose}
-              className="p-2 bg-red-500/10 hover:bg-red-500/20 text-red-600 dark:text-red-400 rounded-lg transition-colors"
-            >
-              <X className="w-5 h-5" />
-            </button>
+          
+          <div className="flex items-center flex-shrink-0">
+            <div className="bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm rounded-xl p-2 border border-gray-200/50 dark:border-gray-700/50 shadow-lg">
+              <button
+                onClick={onClose}
+                className="p-2 bg-red-500/10 hover:bg-red-500/20 text-red-600 dark:text-red-400 rounded-lg transition-all duration-200 hover:scale-105"
+                aria-label="Close"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -381,19 +384,6 @@ const EducationFlow: React.FC<EducationFlowProps> = ({ onClose }) => {
         )}
       </AnimatePresence>
 
-      {/* Network Info Panel */}
-      <div className="absolute bottom-6 left-6 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm rounded-2xl p-4 border border-gray-200/50 dark:border-gray-700/50 shadow-lg max-w-md">
-        <div className="flex items-center gap-3 mb-3">
-          <Info className="w-5 h-5 text-blue-500" />
-          <span className="font-semibold text-gray-900 dark:text-white">Network Overview</span>
-        </div>
-        <div className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
-          <p>• <span className="font-medium">{nodes.filter(n => n.type === 'education').length}</span> Educational Milestones</p>
-          <p>• <span className="font-medium">{nodes.filter(n => n.type === 'certification').length}</span> Professional Certifications</p>
-          <p>• <span className="font-medium">{edges.length}</span> Learning Connections</p>
-          <p className="mt-2 text-xs text-gray-500">Click nodes for details • Drag to explore • Animated connections show learning progression</p>
-        </div>
-      </div>
     </motion.div>
   );
 };
