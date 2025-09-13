@@ -37,9 +37,9 @@ const skillNodes = [
     style: { background: '#61dafb', color: 'white', borderRadius: '20px' },
   },
   {
-    id: 'typescript',
+    id: 'Wardpress',
     position: { x: 300, y: 50 },
-    data: { label: 'TypeScript' },
+    data: { label: 'Wardpress' },
     style: { background: '#3178c6', color: 'white', borderRadius: '20px' },
   },
   {
@@ -49,9 +49,9 @@ const skillNodes = [
     style: { background: '#339933', color: 'white', borderRadius: '20px' },
   },
   {
-    id: 'threejs',
+    id: 'Laravel',
     position: { x: 350, y: 200 },
-    data: { label: 'Three.js' },
+    data: { label: 'Laravel' },
     style: { background: '#000000', color: 'white', borderRadius: '20px' },
   },
   {
@@ -61,20 +61,20 @@ const skillNodes = [
     style: { background: '#06b6d4', color: 'white', borderRadius: '20px' },
   },
   {
-    id: 'python',
+    id: 'Java',
     position: { x: 300, y: 280 },
-    data: { label: 'Python' },
+    data: { label: 'Java' },
     style: { background: '#3776ab', color: 'white', borderRadius: '20px' },
   },
 ];
 
 const skillEdges = [
   { id: 'e1', source: 'profile', target: 'react', animated: true },
-  { id: 'e2', source: 'profile', target: 'typescript', animated: true },
+  { id: 'e2', source: 'profile', target: 'Wardpress', animated: true },
   { id: 'e3', source: 'profile', target: 'nodejs', animated: true },
-  { id: 'e4', source: 'profile', target: 'threejs', animated: true },
+  { id: 'e4', source: 'profile', target: 'Laravel', animated: true },
   { id: 'e5', source: 'profile', target: 'tailwind', animated: true },
-  { id: 'e6', source: 'profile', target: 'python', animated: true },
+  { id: 'e6', source: 'profile', target: 'Java', animated: true },
 ];
 
 const AboutSection = () => {
@@ -161,24 +161,24 @@ const AboutSection = () => {
           </h3>
           
           <p className="text-gray-300 text-lg leading-relaxed">
-            I'm a passionate developer with over 5 years of experience creating immersive digital experiences. 
+            I'm a passionate developer with over 1+ years of experience creating immersive digital experiences. 
             My expertise spans from crafting beautiful user interfaces to building robust backend systems.
           </p>
           
           <p className="text-gray-300 text-lg leading-relaxed">
-            I specialize in modern web technologies including React, TypeScript, Node.js, and Three.js. 
+            I specialize in modern web technologies including React, TypeScript, Node.js, and Laravel. 
             My approach combines technical excellence with creative problem-solving to deliver exceptional results.
           </p>
 
           <div className="grid grid-cols-2 gap-6 mt-8">
             <div className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
               <h4 className="text-cyan-400 font-semibold mb-2">Frontend Excellence</h4>
-              <p className="text-gray-300 text-sm">React, TypeScript, Three.js, Tailwind CSS</p>
+              <p className="text-gray-300 text-sm">React, TypeScript, Laravel, Tailwind CSS, Next.js, HTML, CSS, Wardpress</p>
             </div>
             
             <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
               <h4 className="text-purple-400 font-semibold mb-2">Backend Mastery</h4>
-              <p className="text-gray-300 text-sm">Node.js, Python, PostgreSQL, MongoDB</p>
+              <p className="text-gray-300 text-sm">Node.js, Java, MySQL, MongoDB, Spring Boot, PHP Laravel, Next.js</p>
             </div>
           </div>
 
@@ -193,7 +193,7 @@ const AboutSection = () => {
             </motion.a>
             
             <motion.a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/parichay-singha-ba2a66194/"
               className="px-6 py-3 border border-white/20 rounded-full text-white font-semibold hover:bg-white/10 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
