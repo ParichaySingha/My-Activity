@@ -2,6 +2,7 @@
 import React, { memo, useState } from 'react';
 import { Handle, Position, NodeProps } from '@xyflow/react';
 import { motion } from 'framer-motion';
+import { Brain, Cpu, Flame, Bot, Link2, Zap } from 'lucide-react';
 
 interface AIMLNodeData {
   label: string;
@@ -10,26 +11,27 @@ interface AIMLNodeData {
   category: string;
 }
 
-const CustomLogo: React.FC<{ color: string; size?: number }> = ({ color, size = 28 }) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <circle cx="12" cy="12" r="10" fill={color} fillOpacity="0.15" />
-    <path
-      d="M9 12L11 14L15 10"
-      stroke={color}
-      strokeWidth="2.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <circle cx="12" cy="12" r="6" stroke={color} strokeWidth="2" fill="none" />
-    <circle cx="12" cy="12" r="2" fill={color} />
-  </svg>
-);
+const getAIMLIcon = (label: string) => {
+  switch (label.toLowerCase()) {
+    case 'openai':
+      return Brain;
+    case 'tensorflow':
+      return Cpu;
+    case 'pytorch':
+      return Flame;
+    case 'hugging face':
+      return Bot;
+    case 'langchain':
+      return Link2;
+    default:
+      return Zap;
+  }
+};
+
+const CustomLogo: React.FC<{ color: string; size?: number; label?: string }> = ({ color, size = 28, label = '' }) => {
+  const IconComponent = getAIMLIcon(label);
+  return <IconComponent size={size} color={color} />;
+};
 
 const AIMLNode: React.FC<NodeProps> = ({ data, selected }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -61,7 +63,7 @@ const AIMLNode: React.FC<NodeProps> = ({ data, selected }) => {
       
       <div className="text-center">
         <div className="mb-3 flex justify-center">
-          <CustomLogo color={nodeData?.color || '#ef4444'} />
+          <CustomLogo color={nodeData?.color || '#ef4444'} label={nodeData?.label} />
         </div>
         <div className="font-semibold text-gray-800 dark:text-white text-sm mb-1">
           {nodeData?.label}
@@ -78,7 +80,7 @@ const AIMLNode: React.FC<NodeProps> = ({ data, selected }) => {
           className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 bg-gray-900 dark:bg-gray-700 text-white text-xs px-3 py-2 rounded-lg whitespace-nowrap z-20 shadow-lg"
         >
           <div className="flex items-center gap-2">
-            <CustomLogo color="#ffffff" size={16} />
+            <Brain size={16} color="#ffffff" />
             AI & Machine Learning
           </div>
           <div className="absolute top-[-4px] left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gray-900 dark:bg-gray-700 rotate-45"></div>

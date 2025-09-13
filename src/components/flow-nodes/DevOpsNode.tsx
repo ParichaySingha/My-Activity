@@ -2,6 +2,7 @@
 import React, { memo, useState } from 'react';
 import { Handle, Position, NodeProps } from '@xyflow/react';
 import { motion } from 'framer-motion';
+import { Cloud, Globe, Workflow, Zap, Hexagon, Server } from 'lucide-react';
 
 interface DevOpsNodeData {
   label: string;
@@ -10,26 +11,27 @@ interface DevOpsNodeData {
   category: string;
 }
 
-const CustomLogo: React.FC<{ color: string; size?: number }> = ({ color, size = 28 }) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M12 2L22 8.5V15.5L12 22L2 15.5V8.5L12 2Z"
-      fill={color}
-      fillOpacity="0.15"
-    />
-    <path
-      d="M12 7L17 10V14L12 17L7 14V10L12 7Z"
-      fill={color}
-    />
-    <circle cx="12" cy="12" r="2" fill="white" />
-  </svg>
-);
+const getDevOpsIcon = (label: string) => {
+  switch (label.toLowerCase()) {
+    case 'aws':
+      return Cloud;
+    case 'netlify':
+      return Globe;
+    case 'github actions':
+      return Workflow;
+    case 'vercel':
+      return Zap;
+    case 'kubernetes':
+      return Hexagon;
+    default:
+      return Server;
+  }
+};
+
+const CustomLogo: React.FC<{ color: string; size?: number; label?: string }> = ({ color, size = 28, label = '' }) => {
+  const IconComponent = getDevOpsIcon(label);
+  return <IconComponent size={size} color={color} />;
+};
 
 const DevOpsNode: React.FC<NodeProps> = ({ data, selected }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -61,7 +63,7 @@ const DevOpsNode: React.FC<NodeProps> = ({ data, selected }) => {
       
       <div className="text-center">
         <div className="mb-3 flex justify-center">
-          <CustomLogo color={nodeData?.color || '#8b5cf6'} />
+          <CustomLogo color={nodeData?.color || '#8b5cf6'} label={nodeData?.label} />
         </div>
         <div className="font-semibold text-gray-800 dark:text-white text-sm mb-1">
           {nodeData?.label}
@@ -78,7 +80,7 @@ const DevOpsNode: React.FC<NodeProps> = ({ data, selected }) => {
           className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 bg-gray-900 dark:bg-gray-700 text-white text-xs px-3 py-2 rounded-lg whitespace-nowrap z-20 shadow-lg"
         >
           <div className="flex items-center gap-2">
-            <CustomLogo color="#ffffff" size={16} />
+            <Server size={16} color="#ffffff" />
             DevOps & Cloud
           </div>
           <div className="absolute top-[-4px] left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gray-900 dark:bg-gray-700 rotate-45"></div>

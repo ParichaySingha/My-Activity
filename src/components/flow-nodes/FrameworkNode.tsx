@@ -2,6 +2,7 @@
 import React, { memo, useState } from 'react';
 import { Handle, Position, NodeProps } from '@xyflow/react';
 import { motion } from 'framer-motion';
+import { Layers, ChevronRight, Server, Zap, Triangle, Layers as LayersIcon } from 'lucide-react';
 
 interface FrameworkNodeData {
   label: string;
@@ -10,22 +11,27 @@ interface FrameworkNodeData {
   category: string;
 }
 
-const CustomLogo: React.FC<{ color: string; size?: number }> = ({ color, size = 28 }) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <rect x="3" y="3" width="18" height="18" rx="4" fill={color} fillOpacity="0.15" />
-    <path
-      d="M8 12L12 8L16 12L12 16L8 12Z"
-      fill={color}
-    />
-    <circle cx="12" cy="12" r="2" fill="white" />
-  </svg>
-);
+const getFrameworkIcon = (label: string) => {
+  switch (label.toLowerCase()) {
+    case 'react':
+      return Layers;
+    case 'next.js':
+      return ChevronRight;
+    case 'node.js':
+      return Server;
+    case 'express':
+      return Zap;
+    case 'vue.js':
+      return Triangle;
+    default:
+      return LayersIcon;
+  }
+};
+
+const CustomLogo: React.FC<{ color: string; size?: number; label?: string }> = ({ color, size = 28, label = '' }) => {
+  const IconComponent = getFrameworkIcon(label);
+  return <IconComponent size={size} color={color} />;
+};
 
 const FrameworkNode: React.FC<NodeProps> = ({ data, selected }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -57,7 +63,7 @@ const FrameworkNode: React.FC<NodeProps> = ({ data, selected }) => {
       
       <div className="text-center">
         <div className="mb-3 flex justify-center">
-          <CustomLogo color={nodeData?.color || '#3b82f6'} />
+          <CustomLogo color={nodeData?.color || '#3b82f6'} label={nodeData?.label} />
         </div>
         <div className="font-semibold text-gray-800 dark:text-white text-sm mb-1">
           {nodeData?.label}
@@ -74,7 +80,7 @@ const FrameworkNode: React.FC<NodeProps> = ({ data, selected }) => {
           className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 bg-gray-900 dark:bg-gray-700 text-white text-xs px-3 py-2 rounded-lg whitespace-nowrap z-20 shadow-lg"
         >
           <div className="flex items-center gap-2">
-            <CustomLogo color="#ffffff" size={16} />
+            <LayersIcon size={16} color="#ffffff" />
             Framework/Library
           </div>
           <div className="absolute top-[-4px] left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gray-900 dark:bg-gray-700 rotate-45"></div>

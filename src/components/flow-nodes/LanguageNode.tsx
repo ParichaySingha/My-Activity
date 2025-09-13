@@ -2,6 +2,7 @@
 import React, { memo, useState } from 'react';
 import { Handle, Position, NodeProps } from '@xyflow/react';
 import { motion } from 'framer-motion';
+import { Code2, FileText, Terminal, Coffee, ArrowRight } from 'lucide-react';
 
 interface LanguageNodeData {
   label: string;
@@ -10,25 +11,27 @@ interface LanguageNodeData {
   category: string;
 }
 
-const CustomLogo: React.FC<{ color: string; size?: number }> = ({ color, size = 28 }) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <circle cx="12" cy="12" r="10" fill={color} fillOpacity="0.15" />
-    <path
-      d="M12 8V16M8 12H16"
-      stroke={color}
-      strokeWidth="2.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <circle cx="12" cy="12" r="2.5" fill={color} />
-  </svg>
-);
+const getLanguageIcon = (label: string) => {
+  switch (label.toLowerCase()) {
+    case 'javascript':
+      return Code2;
+    case 'typescript':
+      return FileText;
+    case 'python':
+      return Terminal;
+    case 'java':
+      return Coffee;
+    case 'go':
+      return ArrowRight;
+    default:
+      return Code2;
+  }
+};
+
+const CustomLogo: React.FC<{ color: string; size?: number; label?: string }> = ({ color, size = 28, label = '' }) => {
+  const IconComponent = getLanguageIcon(label);
+  return <IconComponent size={size} color={color} />;
+};
 
 const LanguageNode: React.FC<NodeProps> = ({ data, selected }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -60,7 +63,7 @@ const LanguageNode: React.FC<NodeProps> = ({ data, selected }) => {
       
       <div className="text-center">
         <div className="mb-3 flex justify-center">
-          <CustomLogo color={nodeData?.color || '#6b7280'} />
+          <CustomLogo color={nodeData?.color || '#6b7280'} label={nodeData?.label} />
         </div>
         <div className="font-semibold text-gray-800 dark:text-white text-sm mb-1">
           {nodeData?.label}
@@ -77,7 +80,7 @@ const LanguageNode: React.FC<NodeProps> = ({ data, selected }) => {
           className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 bg-gray-900 dark:bg-gray-700 text-white text-xs px-3 py-2 rounded-lg whitespace-nowrap z-20 shadow-lg"
         >
           <div className="flex items-center gap-2">
-            <CustomLogo color="#ffffff" size={16} />
+            <Code2 size={16} color="#ffffff" />
             Programming Language
           </div>
           <div className="absolute top-[-4px] left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gray-900 dark:bg-gray-700 rotate-45"></div>

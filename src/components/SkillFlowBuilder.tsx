@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import { ReactFlow, useNodesState, useEdgesState, addEdge, Controls, Background, MiniMap, Node, Edge, Connection, ConnectionMode } from '@xyflow/react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Download, Save, RefreshCw, Palette, Sparkles, Moon, Sun, Settings } from 'lucide-react';
+import { Download, Save, RotateCcw, Palette, Sparkles, Moon, Sun, X, Layers, Zap, Target, Link2, Star } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import LanguageNode from './flow-nodes/LanguageNode';
 import FrameworkNode from './flow-nodes/FrameworkNode';
@@ -31,9 +31,17 @@ const CustomLogo: React.FC<{
   color,
   size = 32
 }) => <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="12" cy="12" r="10" fill={color} fillOpacity="0.2" />
-    <path d="M12 8V16M8 12H16" stroke={color} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-    <circle cx="12" cy="12" r="3" fill={color} />
+    <defs>
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor={color} stopOpacity="0.8" />
+        <stop offset="100%" stopColor={color} stopOpacity="0.4" />
+      </linearGradient>
+    </defs>
+    <circle cx="12" cy="12" r="10" fill="url(#gradient)" />
+    <path d="M8 12L12 8L16 12L12 16L8 12Z" fill={color} fillOpacity="0.9" />
+    <circle cx="12" cy="12" r="2" fill="white" />
+    <path d="M12 2L15.5 6L12 10L8.5 6L12 2Z" fill={color} fillOpacity="0.6" />
+    <path d="M12 14L15.5 18L12 22L8.5 18L12 14Z" fill={color} fillOpacity="0.6" />
   </svg>;
 
 // Custom PARICHAY-style welcome node
@@ -311,7 +319,7 @@ const SkillFlowBuilder: React.FC<SkillFlowBuilderProps> = ({
                 className="p-2 sm:p-2.5 bg-red-500/10 hover:bg-red-500/20 text-red-600 dark:text-red-400 rounded-lg transition-colors border border-red-200 dark:border-red-800"
                 title="Clear Flow"
               >
-                <RefreshCw className="w-4 h-4 sm:w-5 sm:h-5" />
+                <RotateCcw className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
 
               {/* Dark Mode Toggle */}
@@ -329,9 +337,7 @@ const SkillFlowBuilder: React.FC<SkillFlowBuilderProps> = ({
                 className="p-2 sm:p-2.5 bg-gray-500/10 hover:bg-gray-500/20 text-gray-600 dark:text-gray-400 rounded-lg transition-colors border border-gray-200 dark:border-gray-700"
                 title="Close Builder"
               >
-                <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                <X className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
             </div>
           </div>

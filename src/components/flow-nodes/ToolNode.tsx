@@ -2,6 +2,7 @@
 import React, { memo, useState } from 'react';
 import { Handle, Position, NodeProps } from '@xyflow/react';
 import { motion } from 'framer-motion';
+import { GitBranch, Container, Palette, Code, Send, Wrench } from 'lucide-react';
 
 interface ToolNodeData {
   label: string;
@@ -10,25 +11,27 @@ interface ToolNodeData {
   category: string;
 }
 
-const CustomLogo: React.FC<{ color: string; size?: number }> = ({ color, size = 28 }) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <circle cx="12" cy="12" r="9" fill={color} fillOpacity="0.15" />
-    <path
-      d="M14.7 6.3L9 12L14.7 17.7"
-      stroke={color}
-      strokeWidth="2.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <circle cx="12" cy="12" r="3" stroke={color} strokeWidth="2" fill="white" />
-  </svg>
-);
+const getToolIcon = (label: string) => {
+  switch (label.toLowerCase()) {
+    case 'git':
+      return GitBranch;
+    case 'docker':
+      return Container;
+    case 'figma':
+      return Palette;
+    case 'vs code':
+      return Code;
+    case 'postman':
+      return Send;
+    default:
+      return Wrench;
+  }
+};
+
+const CustomLogo: React.FC<{ color: string; size?: number; label?: string }> = ({ color, size = 28, label = '' }) => {
+  const IconComponent = getToolIcon(label);
+  return <IconComponent size={size} color={color} />;
+};
 
 const ToolNode: React.FC<NodeProps> = ({ data, selected }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -60,7 +63,7 @@ const ToolNode: React.FC<NodeProps> = ({ data, selected }) => {
       
       <div className="text-center">
         <div className="mb-3 flex justify-center">
-          <CustomLogo color={nodeData?.color || '#10b981'} />
+          <CustomLogo color={nodeData?.color || '#10b981'} label={nodeData?.label} />
         </div>
         <div className="font-semibold text-gray-800 dark:text-white text-sm mb-1">
           {nodeData?.label}
@@ -77,7 +80,7 @@ const ToolNode: React.FC<NodeProps> = ({ data, selected }) => {
           className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 bg-gray-900 dark:bg-gray-700 text-white text-xs px-3 py-2 rounded-lg whitespace-nowrap z-20 shadow-lg"
         >
           <div className="flex items-center gap-2">
-            <CustomLogo color="#ffffff" size={16} />
+            <Wrench size={16} color="#ffffff" />
             Development Tool
           </div>
           <div className="absolute top-[-4px] left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gray-900 dark:bg-gray-700 rotate-45"></div>
