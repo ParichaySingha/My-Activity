@@ -25,16 +25,23 @@ const createSkillFlowNodes = () => {
   nodes.push({
     id: 'center',
     position: { x: centerX, y: centerY },
-    data: { label: '🎯 Skills Hub' },
+    data: { 
+      label: (
+        <div className="w-full h-full rounded-full overflow-hidden" 
+             style={{ background: 'linear-gradient(45deg, #00ffff, #ff00ff)', padding: '3px' }}>
+          <img
+            src="/My Image.png"
+            alt="Profile"
+            className="w-full h-full object-cover rounded-full"
+          />
+        </div>
+      )
+    },
     style: {
-      background: 'linear-gradient(45deg, #00ffff, #ff00ff)',
-      color: 'white',
-      border: '3px solid #fff',
-      borderRadius: '50%',
+      background: 'transparent',
+      border: 'none',
       width: 120,
       height: 120,
-      fontSize: '16px',
-      fontWeight: 'bold',
     },
   });
 
