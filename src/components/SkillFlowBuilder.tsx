@@ -11,11 +11,9 @@ import AIMLNode from './flow-nodes/AIMLNode';
 import EducationNode from './flow-nodes/EducationNode';
 import CertificationNode from './flow-nodes/CertificationNode';
 import NodePalette from './NodePalette';
-
 interface SkillFlowBuilderProps {
   onClose: () => void;
 }
-
 const nodeTypes = {
   language: LanguageNode,
   framework: FrameworkNode,
