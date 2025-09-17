@@ -12,30 +12,43 @@ import {
 const experiences = [
   {
     id: 'exp1',
-    title: 'Senior Full-Stack Developer',
-    company: 'TechCorp Inc.',
-    duration: '2022 - Present',
-    description: 'Led development of enterprise web applications, mentored junior developers, and implemented CI/CD pipelines.',
-    tech: ['React', 'Node.js', 'AWS', 'TypeScript'],
+    title: 'Software Developer',
+    company: 'OMX DIGITAL Pvt Ltd.',
+    duration: 'April 2025 - Present',
+    address: 'Siliguri, West Bengal, India',
+    description: 'Design, develop, and maintain scalable web applications & Software Development using PHP, Laravel, and React.js.Build and customize WordPress themes, plugins, and WooCommerce solutions tailored to client requirements.Create and integrate RESTful APIs for seamless front-end and back-end interaction.Write clean, modular, and reusable code following OOP and MVC best practices.Optimize applications for performance, security, and scalability.Conduct unit and integration testing to ensure high-quality deliverables.Troubleshoot and resolve full-stack technical issues promptly.Collaborate with cross-functional teams in Agile environments using Git for version control.Stay updated with emerging web technologies and industry best practices',
+    tech: ['React', 'Node.js', 'PHP/Laravel', 'WordPress', 'RESTful APIs', 'OOP', 'MVC', 'Performance Optimization', 'Security', 'Unit Testing', 'Integration Testing', 'Git', 'Version Control', 'Emerging Web Technologies', 'Industry Best Practices','Software Development','CRM'],
     position: { x: 100, y: 100 },
   },
   {
     id: 'exp2',
-    title: 'Full-Stack Developer',
-    company: 'StartupXYZ',
-    duration: '2020 - 2022',
-    description: 'Built scalable web applications from scratch, integrated third-party APIs, and optimized database performance.',
-    tech: ['React', 'Python', 'PostgreSQL', 'Docker'],
+    title: 'Backend Developer(Intern)',
+    company: 'Apexenial Labs',
+    duration: 'November 2023 - March 2024',
+    address: 'Hybrid',
+    description: 'I have worked with various technologies including WordPress, PHP, Laravel 10, Bootstrap v5, Canva, and CRM.Optimized backend architectures for a Hotel Management System, CRM, and Academic Operations Platform—resulting in a 30% reduction in API response times and a 40% improvement in scalability.Integrated various APIs into existing systems, enhancing functionality and user experience, resulting in a 60% increase in user engagement.',
+    tech: ['SQL', 'HTML/CSS','WordPress', 'PHP/Laravel', 'Bootstrap v5', 'Canva', 'CRM','API Integration','Performance Optimization','Scalability','User Engagement'],
     position: { x: 400, y: 200 },
   },
   {
     id: 'exp3',
-    title: 'Frontend Developer',
-    company: 'Digital Agency',
-    duration: '2019 - 2020',
-    description: 'Created responsive websites and interactive web applications for various clients in different industries.',
-    tech: ['React', 'JavaScript', 'CSS', 'WordPress'],
+    title: 'Mathematics & Computer Teacher',
+    company: 'Radiance School',
+    duration: 'January 2024 - November 2024',
+    address: 'Kharibari, West Bengal, India',
+    description: 'Experienced mathematics & Computer educator with 1 year of experience Planned, prepared, and delivered engaging mathematics & Computer lessons for students in grades 7-10, focusing on fostering a deep understanding of mathematical &Computer concepts. Developed and implemented curriculum-aligned lesson plans andassessments, ensuring alignment with state standards and school objectives. Organized and conducted extra-curricular activities, such as mathclubs and competitions, significantly increasing studentparticipation and interest in Computer & mathematics. Proficient in classroom management and student engagementtechniques. Strong in curriculum development and lesson planning. Experienced in data-driven instruction and assessment. Effectivecommunicator with students, parents, and colleagues. Skilled inintegrating technology to enhance teaching and learning.',
+    tech: ['Mathematics', 'Computer Science', 'Class 6 to 10', 'Computer Science', 'Mathematics'],
     position: { x: 700, y: 300 },
+  },
+  {
+    id: 'exp4',
+    title: 'Sales force developer ',
+    company: 'SmartInternz',
+    duration: 'August 2023 - October 2023',
+    address: 'Remote',
+    description: 'Salesforce Fundamentals Organizational Setup Relationship & Process Automation Types of Flows & Security Apex, Testing & Debugging VS Code setup & CLI Setup Lightning Web Components (LWC) & API',
+    tech: ['Salesforce', 'Salesforce Developer', 'Salesforce Developer Virtual Internship','Organizational Setup','Relationship & Process Automation','Types of Flows & Security','Apex, Testing & Debugging','VS Code setup & CLI Setup','Lightning Web Components (LWC) & API'],
+    position: { x: 700, y: 400 },
   },
 ];
 
@@ -135,6 +148,15 @@ const ExperienceSection = () => {
               <div>
                 <h3 className="text-2xl font-bold text-white mb-2">{exp.title}</h3>
                 <p className="text-cyan-400 text-lg font-semibold">{exp.company}</p>
+                {exp.address && (
+                  <div className="flex items-center mt-2">
+                    <svg className="w-4 h-4 text-gray-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span className="text-gray-400 text-sm">{exp.address}</span>
+                  </div>
+                )}
               </div>
               <div className="text-purple-400 font-semibold">{exp.duration}</div>
             </div>
