@@ -10,10 +10,10 @@ import {
 } from '@xyflow/react';
 
 const skillCategories = {
-  Frontend: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Three.js', 'Framer Motion'],
-  Backend: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'GraphQL', 'REST APIs'],
-  Tools: ['Git', 'Docker', 'AWS', 'Vercel', 'Figma', 'VS Code'],
-  Design: ['UI/UX', 'Responsive Design', 'Accessibility', 'Design Systems']
+  Frontend: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'HTML CSS', 'AI'],
+  Backend: ['Node.js', 'PHP', 'Laravel', 'MongoDB', 'MySQL', 'N8N Automation'],
+  Tools: ['Git/GitHub', 'Docker', 'Fork', 'Vercel', 'WordPress', 'VS Code'],
+  Design: ['UI/UX', 'Responsive Design', 'Accessibility', 'Design Systems','WordPress']
 };
 
 const createSkillFlowNodes = () => {
@@ -214,8 +214,8 @@ const SkillsSection = () => {
         <div className="bg-gradient-to-r from-cyan-500/10 to-purple-500/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
           <h3 className="text-2xl font-bold text-white mb-4">Always Learning</h3>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Technology evolves rapidly, and so do I. Currently exploring AI/ML integration, 
-            Web3 technologies, and advanced 3D graphics to stay at the forefront of innovation.
+            Technology evolves rapidly, and so do I. Currently exploring AI Automation integration, 
+            Web3 technologies, and advanced Development to stay at the forefront of innovation.
           </p>
         </div>
       </motion.div>
