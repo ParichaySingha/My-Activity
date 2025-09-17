@@ -52,7 +52,7 @@ const Navigation: React.FC<NavigationProps> = ({
     duration: 1,
     delay: 0.5
   }}>
-      <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
+      <div className="container mx-auto px-4 sm:px-6 py-2 sm:py-3">
         <div className="flex justify-between items-center">
           <motion.div className="flex items-center" whileHover={{
           scale: 1.05
@@ -60,8 +60,8 @@ const Navigation: React.FC<NavigationProps> = ({
             <img src="/lovable-uploads/b16db4be-de4c-45a7-a530-926539e5db24.png" alt="Portfolio Logo" className="h-10 w-80 sm:h-10 sm:w-40 md:h-12 md:w-120 object-cover" />
           </motion.div>
           
-          <div className="hidden md:flex space-x-6 lg:space-x-8">
-            {navItems.map(item => <motion.button key={item.id} onClick={() => scrollToSection(item.id)} className={`relative px-3 lg:px-4 py-2 text-sm font-medium transition-colors duration-300 ${activeSection === item.id ? 'text-cyan-400' : 'text-gray-300 hover:text-white'}`} whileHover={{
+          <div className="hidden md:flex space-x-3 lg:space-x-4">
+            {navItems.map(item => <motion.button key={item.id} onClick={() => scrollToSection(item.id)} className={`relative px-2 lg:px-3 py-1.5 text-sm font-medium transition-colors duration-300 ${activeSection === item.id ? 'text-cyan-400' : 'text-gray-300 hover:text-white'}`} whileHover={{
             scale: 1.05
           }} whileTap={{
             scale: 0.95

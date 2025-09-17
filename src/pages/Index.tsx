@@ -71,27 +71,27 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="about" className="min-h-screen py-20">
+      <section id="about" className="min-h-screen py-12">
         <AboutSection />
       </section>
 
-      <section id="projects" className="min-h-screen py-20">
+      <section id="projects" className="min-h-screen py-12">
         <ProjectsSection />
       </section>
 
-      <section id="skills" className="min-h-screen py-20">
+      <section id="skills" className="min-h-screen py-12">
         <SkillsSection />
       </section>
 
-      <section id="experience" className="min-h-screen py-20">
+      <section id="experience" className="min-h-screen py-12">
         <ExperienceSection />
       </section>
 
-      <section id="education" className="min-h-screen py-20">
+      <section id="education" className="min-h-screen py-6">
         <EducationSection />
       </section>
 
-      <section id="contact" className="min-h-screen py-20">
+      <section id="contact" className="min-h-screen py-6">
         <ContactSection />
       </section>
 
