@@ -10,6 +10,7 @@ import EducationSection from '../components/EducationSection';
 import ProfessionalKnowledgeGraph from '../components/ProfessionalKnowledgeGraph';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
+import VoiceWidget from '../components/VoiceWidget';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Index = () => {
@@ -96,6 +97,9 @@ const Index = () => {
       </section>
 
       <Footer />
+      
+      {/* Voice Assistant Widget */}
+      <VoiceWidget />
     </div>
   );
 };
