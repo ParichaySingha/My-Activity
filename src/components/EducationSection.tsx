@@ -85,7 +85,7 @@ const EducationSection = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-cyan-500/50 transition-all duration-300"
                 >
-                  <div className="flex justify-between items-start mb-4">
+                  <div className="flex justify-between items-start mb-2">
                     <div>
                       <h4 className="text-xl font-bold text-white mb-2">{edu.degree}</h4>
                       <p className="text-cyan-400 font-semibold">{edu.institution}</p>
@@ -93,7 +93,7 @@ const EducationSection = () => {
                     <span className="text-purple-400 font-semibold">{edu.year}</span>
                   </div>
                   
-                  <p className="text-gray-300 mb-4">{edu.description}</p>
+                  <p className="text-gray-300 mb-3">{edu.description}</p>
                   
                   <div className="space-y-2">
                     <h5 className="text-white font-semibold">Key Achievements:</h5>
