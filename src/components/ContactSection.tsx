@@ -59,7 +59,7 @@ const ContactSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="text-center mb-16"
+        className="text-center mb-8"
       >
         <h2 className="text-5xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent mb-8">
           Let's Build Something Amazing
@@ -277,10 +277,10 @@ const ContactSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.4 }}
-        className="mt-16"
+        className="mt-6"
       >
-        <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-          <div className="flex items-center space-x-3 mb-4">
+        <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
+          <div className="flex items-center space-x-3 mb-2">
             <Clock className="w-6 h-6 text-purple-400" />
             <h3 className="text-xl font-bold text-white">Availability</h3>
           </div>
