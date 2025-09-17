@@ -91,12 +91,12 @@ const MobileIcon = () => (
 const projects = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    description: "A full-stack e-commerce solution with real-time inventory management, payment processing, and advanced analytics dashboard.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
-    tech: ["React", "Node.js", "PostgreSQL", "Stripe API"],
+    title: "AI-powered analytics & automation dashboard!",
+    description: "End-to-end AI-powered analytics & automation dashboard!(Lovable Integration with N8N)I designed and implemented a system that:1) Integrates n8n workflows with OpenAI, Google Sheets, and Gmail to automate client interactions.2) Tracks key business metrics in real-time (clients, revenue, headshots delivered, success rates).3) Displays an interactive dashboard with client data, performance analytics, and revenue trends.4) Enables an AI assistant chatbot to engage visitors directly and streamline communication.This project demonstrates my ability to:🔹 Architect low-code automation pipelines (webhooks, AI agents, APIs).🔹 Combine data visualisation + automation for actionable insights.🔹 Build user-friendly dashboards that support decision-making.",
+    image: "https://ik.imagekit.io/mnfleytnv/ChatGPT%20Image%20Sep%2016,%202025,%2008_39_30%20PM.png?updatedAt=1758101002969",
+    tech: ["React", "Next.js", "N8N Automation", "Lovable AI"],
     github: "https://github.com",
-    live: "https://demo.com",
+    live: "https://flowlytic.vercel.app/",
     category: "Full-Stack"
   },
   {
@@ -123,7 +123,7 @@ const projects = [
     id: 4,
     title: "Mobile Food Delivery App",
     description: "Cross-platform mobile application with real-time tracking, payment integration, and social features.",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=800&h=600&fit=crop",
+    image: "https://ik.imagekit.io/mnfleytnv/ChatGPT%20Image%20Sep%2016,%202025,%2008_39_30%20PM.png?updatedAt=1758101002969",
     tech: ["React Native", "Firebase", "Stripe", "Google Maps API"],
     github: "https://github.com",
     live: "https://demo.com",
@@ -143,7 +143,7 @@ const projects = [
     id: 6,
     title: "IoT Smart Home System",
     description: "Comprehensive smart home automation system with voice control, energy monitoring, and security features.",
-    image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=600&fit=crop",
+    image: "https://ik.imagekit.io/mnfleytnv/ChatGPT%20Image%20Sep%2016,%202025,%2008_39_30%20PM.png?updatedAt=1758101002969",
     tech: ["React", "Node.js", "IoT", "AWS"],
     github: "https://github.com",
     live: "https://demo.com",
@@ -219,6 +219,8 @@ const ProjectModal = ({ project, onClose }) => {
             </motion.a>
             <motion.a
               href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 flex items-center space-x-2 group"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
