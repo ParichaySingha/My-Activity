@@ -55,11 +55,11 @@ const initialNodes: Node[] = [
     type: 'education',
     position: { x: 300, y: 200 },
     data: {
-      degree: 'Master of Computer Science',
-      institution: 'Tech University',
-      year: '2018 - 2020',
-      description: 'Specialized in Software Engineering and Artificial Intelligence',
-      achievements: ['Graduated Summa Cum Laude', 'Published 2 research papers', 'Teaching Assistant for 3 semesters'],
+      degree: 'B.Tech - Bachelor of Technology',
+      institution: 'Siliguri Institute of Technology',
+      year: '2019 - 2023',
+      description: 'Specialized in Software Engineering and Information Technology',
+      achievements: ['Graduated with Distinction', 'Academic Excellence', 'Hackathons & Competitions','Leadership/Teamwork/Soft Skills'],
       color: '#3b82f6',
       icon: 'graduation-cap'
     },
@@ -69,11 +69,11 @@ const initialNodes: Node[] = [
     type: 'education',
     position: { x: 300, y: 500 },
     data: {
-      degree: 'Bachelor of Computer Engineering',
-      institution: 'State University',
-      year: '2014 - 2018',
-      description: 'Focus on Web Development and Database Systems',
-      achievements: ['Dean\'s List for 6 semesters', 'President of Computer Science Club', 'Winner of Hackathon 2017'],
+      degree: 'West Bengal Council of Higher Secondary Education (WBCHSE)',
+      institution: 'Nand Prasad High School(H.S)',
+      year: '2017 - 2019',
+      description: 'Focus on Science, Computer Science and Mathematics',
+      achievements: ['National-Level Recognition', 'President of Computer Science Club', 'Scholarships & Awards','First Major Academic Milestone '],
       color: '#10b981',
       icon: 'book'
     },
@@ -84,10 +84,10 @@ const initialNodes: Node[] = [
     type: 'certification',
     position: { x: 700, y: 100 },
     data: {
-      name: 'AWS Certified Solutions Architect',
-      issuer: 'Amazon Web Services',
-      year: '2023',
-      description: 'Professional-level certification demonstrating expertise in designing distributed systems on AWS.',
+      name: 'Certificate of Excellence in Challenge 22 of Weekly Coding Challenge',
+      issuer: 'Unstop',
+      year: '2025',
+      description: 'Certificate of Excellence in Challenge 22 of Weekly Coding Challenge',
       color: '#ff9900',
       icon: 'award'
     },
@@ -97,10 +97,10 @@ const initialNodes: Node[] = [
     type: 'certification',
     position: { x: 700, y: 250 },
     data: {
-      name: 'Google Cloud Professional Developer',
-      issuer: 'Google Cloud',
-      year: '2022',
-      description: 'Validates ability to design, build, and deploy applications on Google Cloud Platform.',
+      name: 'Developing with Amazon DynamoDB (Includes Labs)',
+      issuer: 'Amazon Web Services',
+      year: '2024',
+      description: 'Developing with Amazon DynamoDB (Includes Labs)',
       color: '#4285f4',
       icon: 'award'
     },
@@ -110,10 +110,10 @@ const initialNodes: Node[] = [
     type: 'certification',
     position: { x: 700, y: 400 },
     data: {
-      name: 'Meta Frontend Developer Certificate',
-      issuer: 'Meta',
-      year: '2021',
-      description: 'Comprehensive program covering React, JavaScript, and modern frontend development practices.',
+      name: 'Salesforce Developer Virtual Internship',
+      issuer: 'Salesforce',
+      year: '2023',
+      description: 'Salesforce Developer Virtual Internship',
       color: '#1877f2',
       icon: 'award'
     },
@@ -123,10 +123,10 @@ const initialNodes: Node[] = [
     type: 'certification',
     position: { x: 700, y: 550 },
     data: {
-      name: 'MongoDB Certified Developer',
-      issuer: 'MongoDB Inc.',
-      year: '2021',
-      description: 'Validates expertise in MongoDB database design, development, and administration.',
+      name: 'Introduction to how ML Algos work',
+      issuer: 'InterviewBit',
+      year: '2023',
+      description: 'Introduction to how ML Algos work',
       color: '#47a248',
       icon: 'award'
     },

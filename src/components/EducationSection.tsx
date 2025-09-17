@@ -6,27 +6,28 @@ import EducationFlow from './EducationFlow';
 const education = [
   {
     id: 1,
-    degree: 'Master of Computer Science',
-    institution: 'Tech University',
-    year: '2018 - 2020',
-    description: 'Specialized in Software Engineering and Artificial Intelligence',
-    achievements: ['Graduated Summa Cum Laude', 'Published 2 research papers', 'Teaching Assistant for 3 semesters'],
+    degree: 'B.Tech - Bachelor of Technology',
+    institution: 'Siliguri Institute of Technology',
+    year: '2019 - 2023',
+    description: 'Specialized in Software Engineering and Information Technology',
+    achievements: ['Graduated with Distinction', 'Academic Excellence', 'Hackathons & Competitions','Leadership/Teamwork/Soft Skills'],
   },
   {
     id: 2,
-    degree: 'Bachelor of Computer Engineering',
-    institution: 'State University',
-    year: '2014 - 2018',
-    description: 'Focus on Web Development and Database Systems',
-    achievements: ['Dean\'s List for 6 semesters', 'President of Computer Science Club', 'Winner of Hackathon 2017'],
+    degree: 'West Bengal Council of Higher Secondary Education (WBCHSE)',
+    institution: 'Nand Prasad High School(H.S)',
+    year: '2017 - 2019',
+    description: 'Focus on Science, Computer Science and Mathematics',
+    achievements: ['National-Level Recognition', 'President of Computer Science Club', 'Scholarships & Awards','First Major Academic Milestone'],
   },
 ];
 
 const certifications = [
-  { name: 'AWS Certified Solutions Architect', issuer: 'Amazon Web Services', year: '2023' },
-  { name: 'Google Cloud Professional Developer', issuer: 'Google Cloud', year: '2022' },
-  { name: 'Meta Frontend Developer Certificate', issuer: 'Meta', year: '2021' },
-  { name: 'MongoDB Certified Developer', issuer: 'MongoDB Inc.', year: '2021' },
+  { name: 'Certificate of Excellence in Challenge 22 of Weekly Coding Challenge', issuer: 'Unstop', year: '2025' },
+  { name: 'Developing with Amazon DynamoDB (Includes Labs)', issuer: 'Amazon Web Services', year: '2024' },
+  { name: 'Salesforce Developer Virtual Internship', issuer: 'Skills: Sales Operations · Salesforce.com', year: '2023' },
+  { name: 'Introduction to how ML Algos work', issuer: 'InterviewBit', year: '2023' },
+  { name: 'Java certificate', issuer: 'HackerRank', year: '2023' },
 ];
 
 const EducationSection = () => {
@@ -140,25 +141,6 @@ const EducationSection = () => {
               ))}
             </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-8 p-6 bg-gradient-to-r from-purple-500/10 to-pink-500/10 backdrop-blur-sm rounded-xl border border-white/10"
-            >
-              <h4 className="text-xl font-bold text-white mb-4">Currently Pursuing</h4>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full animate-pulse" />
-                  <span className="text-gray-300">Machine Learning Specialization - Stanford Online</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full animate-pulse" />
-                  <span className="text-gray-300">Web3 Developer Certification - Blockchain Institute</span>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </div>
