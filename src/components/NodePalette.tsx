@@ -38,7 +38,8 @@ const nodeCategories = {
   Languages: [
     { type: 'language', label: 'JavaScript', icon: Code2, color: '#f7df1e' },
     { type: 'language', label: 'TypeScript', icon: FileText, color: '#3178c6' },
-    { type: 'language', label: 'Python', icon: Terminal, color: '#3776ab' },
+    { type: 'language', label: 'PHP', icon: Terminal, color: '#3776ab' },
+    { type: 'language', label: 'Laravel', icon: Terminal, color: '#3776ab' },
     { type: 'language', label: 'Java', icon: Coffee, color: '#f89820' },
     { type: 'language', label: 'Go', icon: ArrowRight, color: '#00add8' },
   ],
@@ -47,14 +48,15 @@ const nodeCategories = {
     { type: 'framework', label: 'Next.js', icon: ChevronRight, color: '#000000' },
     { type: 'framework', label: 'Node.js', icon: Server, color: '#339933' },
     { type: 'framework', label: 'Express', icon: Zap, color: '#000000' },
-    { type: 'framework', label: 'Vue.js', icon: Triangle, color: '#4fc08d' },
+    { type: 'framework', label: 'Laravel', icon: Triangle, color: '#4fc08d' },
   ],
   Tools: [
     { type: 'tool', label: 'Git', icon: GitBranch, color: '#f05032' },
     { type: 'tool', label: 'Docker', icon: Container, color: '#2496ed' },
-    { type: 'tool', label: 'Figma', icon: Palette, color: '#f24e1e' },
+    { type: 'tool', label: 'GitHub', icon: Palette, color: '#f24e1e' },
     { type: 'tool', label: 'VS Code', icon: Code, color: '#007acc' },
     { type: 'tool', label: 'Postman', icon: Send, color: '#ff6c37' },
+    { type: 'tool', label: 'Fork', icon: Palette, color: '#f24e1e' },
   ],
   DevOps: [
     { type: 'devops', label: 'AWS', icon: Cloud, color: '#ff9900' },
@@ -62,13 +64,16 @@ const nodeCategories = {
     { type: 'devops', label: 'GitHub Actions', icon: Workflow, color: '#2088ff' },
     { type: 'devops', label: 'Vercel', icon: Zap, color: '#000000' },
     { type: 'devops', label: 'Kubernetes', icon: Hexagon, color: '#326ce5' },
+    { type: 'devops', label: 'Hostinger', icon: Container, color: '#2496ed' },
+    { type: 'devops', label: 'Railway', icon: Container, color: '#2496ed' },
   ],
-  'AI/ML': [
+  'AI/ML Agent': [
     { type: 'aiml', label: 'OpenAI', icon: Brain, color: '#412991' },
     { type: 'aiml', label: 'TensorFlow', icon: Cpu, color: '#ff6f00' },
-    { type: 'aiml', label: 'PyTorch', icon: Flame, color: '#ee4c2c' },
-    { type: 'aiml', label: 'Hugging Face', icon: Bot, color: '#ffcc02' },
-    { type: 'aiml', label: 'LangChain', icon: Link2, color: '#1c3a5e' },
+    { type: 'aiml', label: 'Cursor', icon: Flame, color: '#ee4c2c' },
+    { type: 'aiml', label: 'ChatGPT', icon: Flame, color: '#ee4c2c' },
+    { type: 'aiml', label: 'N8N Automation', icon: Bot, color: '#ffcc02' },
+    { type: 'aiml', label: 'Lavable AI', icon: Link2, color: '#1c3a5e' },
   ],
 };
 
