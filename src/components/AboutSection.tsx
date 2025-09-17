@@ -194,6 +194,8 @@ const AboutSection = () => {
             
             <motion.a
               href="https://www.linkedin.com/in/parichay-singha-ba2a66194/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 border border-white/20 rounded-full text-white font-semibold hover:bg-white/10 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
