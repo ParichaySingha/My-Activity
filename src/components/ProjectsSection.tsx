@@ -93,7 +93,10 @@ const projects = [
     id: 1,
     title: "AI-powered analytics & automation dashboard!",
     description: "End-to-end AI-powered analytics & automation dashboard!(Lovable Integration with N8N)I designed and implemented a system that:1) Integrates n8n workflows with OpenAI, Google Sheets, and Gmail to automate client interactions.2) Tracks key business metrics in real-time (clients, revenue, headshots delivered, success rates).3) Displays an interactive dashboard with client data, performance analytics, and revenue trends.4) Enables an AI assistant chatbot to engage visitors directly and streamline communication.This project demonstrates my ability to:🔹 Architect low-code automation pipelines (webhooks, AI agents, APIs).🔹 Combine data visualisation + automation for actionable insights.🔹 Build user-friendly dashboards that support decision-making.",
-    image: "https://ik.imagekit.io/mnfleytnv/ChatGPT%20Image%20Sep%2016,%202025,%2008_39_30%20PM.png?updatedAt=1758101002969",
+    image: "https://ik.imagekit.io/mnfleytnv/image.png?updatedAt=1758102986196",
+    image2: "https://ik.imagekit.io/mnfleytnv/ChatGPT%20Image%20Sep%2016,%202025,%2008_39_30%20PM.png?updatedAt=1758102184981",
+    image3: "https://ik.imagekit.io/mnfleytnv/image.png?updatedAt=1758103093731",
+    image4: "https://ik.imagekit.io/mnfleytnv/ChatGPT%20Image%20Sep%2016,%202025,%2008_39_30%20PM.png?updatedAt=1758102184981",
     tech: ["React", "Next.js", "N8N Automation", "Lovable AI"],
     github: "https://github.com",
     live: "https://flowlytic.vercel.app/",
@@ -152,6 +155,24 @@ const projects = [
 ];
 
 const ProjectModal = ({ project, onClose }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  // Create gallery images array based on project's available images
+  const galleryImages = [
+    project.image,
+    ...(project.image2 ? [project.image2] : []),
+    ...(project.image3 ? [project.image3] : []),
+    ...(project.image4 ? [project.image4] : [])
+  ];
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -164,15 +185,52 @@ const ProjectModal = ({ project, onClose }) => {
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.8, opacity: 0 }}
-        className="bg-gray-900 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto border border-gray-700"
+        className="bg-gray-900 rounded-2xl max-w-5xl w-full max-h-[90vh] overflow-y-auto border border-gray-700"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="relative">
-          <img 
-            src={project.image} 
-            alt={project.title}
-            className="w-full h-64 object-cover rounded-t-2xl"
-          />
+          <div className="relative h-80 overflow-hidden rounded-t-2xl">
+            <motion.img 
+              key={currentImageIndex}
+              src={galleryImages[currentImageIndex]} 
+              alt={`${project.title} - Image ${currentImageIndex + 1}`}
+              className="w-full h-full object-contain bg-gray-800"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
+              transition={{ duration: 0.3 }}
+            />
+            
+            {/* Navigation Arrows */}
+            {galleryImages.length > 1 && (
+              <>
+                <button
+                  onClick={prevImage}
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 p-3 bg-black/50 hover:bg-black/70 rounded-full transition-all duration-300 hover:scale-110 group"
+                >
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button
+                  onClick={nextImage}
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 p-3 bg-black/50 hover:bg-black/70 rounded-full transition-all duration-300 hover:scale-110 group"
+                >
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </>
+            )}
+            
+            {/* Image Counter */}
+            {galleryImages.length > 1 && (
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 px-3 py-1 bg-black/50 backdrop-blur-sm rounded-full text-white text-sm">
+                {currentImageIndex + 1} / {galleryImages.length}
+              </div>
+            )}
+          </div>
+          
           <button
             onClick={onClose}
             className="absolute top-4 right-4 p-3 bg-black/50 hover:bg-black/70 rounded-full transition-all duration-300 hover:scale-110 group"
@@ -207,6 +265,7 @@ const ProjectModal = ({ project, onClose }) => {
             </div>
           </div>
           
+
           <div className="flex space-x-4">
             <motion.a
               href={project.github}
@@ -248,7 +307,7 @@ const ProjectCard = ({ project, onClick }) => {
           <img 
             src={project.image} 
             alt={project.title}
-            className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+            className="w-full h-48 object-contain bg-gray-800 transition-transform duration-300 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
