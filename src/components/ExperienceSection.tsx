@@ -17,7 +17,7 @@ const experiences = [
     duration: 'April 2025 - Present',
     address: 'Siliguri, West Bengal, India',
     description: 'Design, develop, and maintain scalable web applications & Software Development using PHP, Laravel, and React.js.Build and customize WordPress themes, plugins, and WooCommerce solutions tailored to client requirements.Create and integrate RESTful APIs for seamless front-end and back-end interaction.Write clean, modular, and reusable code following OOP and MVC best practices.Optimize applications for performance, security, and scalability.Conduct unit and integration testing to ensure high-quality deliverables.Troubleshoot and resolve full-stack technical issues promptly.Collaborate with cross-functional teams in Agile environments using Git for version control.Stay updated with emerging web technologies and industry best practices',
-    tech: ['React', 'Node.js', 'PHP/Laravel', 'WordPress', 'RESTful APIs', 'OOP', 'MVC', 'Performance Optimization', 'Security', 'Unit Testing', 'Integration Testing', 'Git', 'Version Control', 'Emerging Web Technologies', 'Industry Best Practices','Software Development','CRM'],
+    tech: ['React', 'Node.js', 'PHP/Laravel', 'WordPress', 'RESTful APIs', 'OOP', 'MVC', 'Performance Optimization', 'Security', 'Git', 'Version Control', 'Emerging Web Technologies', 'Industry Best Practices','Software Development','CRM'],
     position: { x: 100, y: 100 },
   },
   {
