@@ -54,7 +54,7 @@ const Index = () => {
       <section id="hero" className="h-screen relative">
         <Hero3D />
         <div className="absolute bottom-20 sm:bottom-24 left-1/2 transform -translate-x-1/2 z-10">
-          <motion.button
+          {/* <motion.button
             onClick={() => {
               console.log('Knowledge Graph button clicked');
               setShowKnowledgeGraph(true);
@@ -67,7 +67,7 @@ const Index = () => {
             transition={{ duration: 1, delay: 3 }}
           >
             Explore Knowledge Graph
-          </motion.button>
+          </motion.button> */}
         </div>
       </section>
 

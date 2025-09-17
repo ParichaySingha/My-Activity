@@ -178,9 +178,9 @@ const initialNodes: Node[] = [
     data: {
       label: 'Parichay Singha',
       type: 'profile',
-      description: 'Senior Full-Stack Developer & Creative Technologist with 1+ years of experience building scalable applications',
+      description: 'Full-Stack Developer & Creative Technologist with 1+ years of experience building scalable applications',
       color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      category: 'Senior Developer',
+      category: 'Developer',
       status: 'Active',
       metrics: { yearsExperience: 1, projectsCompleted: 10 },
     } as ProfessionalNodeData,
@@ -482,32 +482,6 @@ const ProfessionalKnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onClose }) 
           Tap nodes to explore details
         </p>
       </div>
-
-      {/* Stats Panel - Responsive */}
-      {/* <div className="absolute top-0 sm:top-2 right-2 sm:right-4 z-10 bg-black/80 backdrop-blur-sm border border-white/20 rounded-lg p-3 sm:p-4 text-white w-32 sm:w-48">
-        <h3 className="text-xs sm:text-sm font-bold mb-2 flex items-center">
-          <BarChart3 className="w-3 h-3 sm:w-4 sm:h-4 mr-1 text-blue-400" />
-          <span className="hidden sm:inline">Stats</span>
-        </h3>
-        <div className="space-y-1 text-xs">
-          <div className="flex justify-between">
-            <span className="text-gray-400">Nodes:</span>
-            <span className="text-blue-400 font-semibold">{stats.totalNodes}</span>
-          </div>
-          <div className="flex justify-between">
-            <span className="text-gray-400">Links:</span>
-            <span className="text-green-400 font-semibold">{stats.totalEdges}</span>
-          </div>
-          <div className="hidden sm:block space-y-1 mt-2">
-            {Object.entries(stats.nodesByType).map(([type, count]) => (
-              <div key={type} className="flex justify-between text-xs">
-                <span className="capitalize text-gray-400">{type}s:</span>
-                <span className="text-white">{count}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
 
       {/* Close Button - Responsive */}
       <button
