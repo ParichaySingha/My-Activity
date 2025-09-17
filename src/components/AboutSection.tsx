@@ -166,7 +166,7 @@ const AboutSection = () => {
           </p>
           
           <p className="text-gray-300 text-lg leading-relaxed">
-            I specialize in modern web technologies including React, TypeScript, Node.js, and Laravel. 
+            I specialize in modern web technologies including WordPress, React, Node.js, Fork, and Laravel.
             My approach combines technical excellence with creative problem-solving to deliver exceptional results.
           </p>
 
