@@ -7,6 +7,22 @@ import {
   useEdgesState,
   Background,
 } from '@xyflow/react';
+import { 
+  Code, 
+  Type, 
+  Palette, 
+  Globe, 
+  FileText, 
+  Layers, 
+  Database, 
+  Server, 
+  Coffee, 
+  CheckCircle, 
+  Leaf, 
+  Zap, 
+  Flame,
+  Terminal
+} from 'lucide-react';
 
 const skillNodes = [
   {
@@ -172,13 +188,113 @@ const AboutSection = () => {
 
           <div className="grid grid-cols-2 gap-6 mt-8">
             <div className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
-              <h4 className="text-cyan-400 font-semibold mb-2">Frontend Excellence</h4>
-              <p className="text-gray-300 text-sm">React, TypeScript, Tailwind CSS, Next.js, HTML, CSS, Wardpress</p>
+              <h4 className="text-cyan-400 font-semibold mb-4">Frontend Excellence</h4>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="flex items-center space-x-2">
+                  <div className="w-6 h-6 bg-blue-400 rounded flex items-center justify-center">
+                    <Code className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-gray-300 text-sm">React</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
+                    <Type className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-gray-300 text-sm">TypeScript</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-6 h-6 bg-cyan-500 rounded flex items-center justify-center">
+                    <Palette className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-gray-300 text-sm">Tailwind</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-6 h-6 bg-black rounded flex items-center justify-center">
+                    <Globe className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-gray-300 text-sm">Next.js</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-6 h-6 bg-orange-500 rounded flex items-center justify-center">
+                    <FileText className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-gray-300 text-sm">HTML</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
+                    <Layers className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-gray-300 text-sm">CSS</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-6 h-6 bg-blue-700 rounded flex items-center justify-center">
+                    <Terminal className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-gray-300 text-sm">WordPress</span>
+                </div>
+              </div>
             </div>
             
             <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
-              <h4 className="text-purple-400 font-semibold mb-2">Backend Mastery</h4>
-              <p className="text-gray-300 text-sm">Node.js,N8N Automation, Java, MySQL, MongoDB, Spring Boot, PHP Laravel, Next.js</p>
+              <h4 className="text-purple-400 font-semibold mb-4">Backend Mastery</h4>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="flex items-center space-x-2">
+                  <div className="w-6 h-6 bg-green-500 rounded flex items-center justify-center">
+                    <Server className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-gray-300 text-sm">Node.js</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-6 h-6 bg-orange-500 rounded flex items-center justify-center">
+                    <Zap className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-gray-300 text-sm">N8N</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-6 h-6 bg-red-500 rounded flex items-center justify-center">
+                    <Coffee className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-gray-300 text-sm">Java</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
+                    <Database className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-gray-300 text-sm">MySQL</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-6 h-6 bg-green-600 rounded flex items-center justify-center">
+                    <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M17.193 9.555c-1.491-.109-2.623-.491-3.394-1.146-.771-.655-1.157-1.491-1.157-2.508 0-.655.164-1.2.491-1.636.327-.436.755-.764 1.282-.982.527-.218 1.109-.327 1.745-.327.636 0 1.218.109 1.745.327.527.218.955.546 1.282.982.327.436.491.981.491 1.636 0 .655-.164 1.2-.491 1.636-.327.436-.755.764-1.282.982-.527.218-1.109.327-1.745.327-.636 0-1.218-.109-1.745-.327-.527-.218-.955-.546-1.282-.982-.327-.436-.491-.981-.491-1.636 0-1.017.386-1.853 1.157-2.508.771-.655 1.903-1.037 3.394-1.146v-1.2c-1.491.109-2.623.491-3.394 1.146-.771.655-1.157 1.491-1.157 2.508 0 .655.164 1.2.491 1.636.327.436.755.764 1.282.982.527.218 1.109.327 1.745.327.636 0 1.218-.109 1.745-.327.527-.218.955-.546 1.282-.982.327-.436.491-.981.491-1.636 0-1.017-.386-1.853-1.157-2.508-.771-.655-1.903-1.037-3.394-1.146v-1.2z"/>
+                    </svg>
+                  </div>
+                  <span className="text-gray-300 text-sm">MongoDB</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-6 h-6 bg-green-700 rounded flex items-center justify-center">
+                    <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                  </div>
+                  <span className="text-gray-300 text-sm">Spring Boot</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-6 h-6 bg-red-600 rounded flex items-center justify-center">
+                    <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                  </div>
+                  <span className="text-gray-300 text-sm">Laravel</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-6 h-6 bg-black rounded flex items-center justify-center">
+                    <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M11.572 0c-.176 0-.31.001-.358.006a6.026 6.026 0 0 0-.633.103A5.96 5.96 0 0 0 8.39.678 5.903 5.903 0 0 0 6.03 2.04a5.96 5.96 0 0 0-.633.633A6.026 6.026 0 0 0 4.678 4.4a5.903 5.903 0 0 0-.103.633C4.57 5.082 4.57 5.216 4.57 5.392v13.216c0 .176.001.31.006.358.017.22.05.433.103.633.053.2.124.39.212.567.088.178.193.343.312.492.12.15.253.285.398.402.15.12.31.225.492.312.178.088.367.159.567.212.2.053.413.086.633.103.048.005.182.006.358.006h.858c.176 0 .31-.001.358-.006.22-.017.433-.05.633-.103.2-.053.39-.124.567-.212a3.1 3.1 0 0 0 .492-.312c.15-.12.285-.253.402-.398.12-.15.225-.31.312-.492.088-.178.159-.367.212-.567.053-.2.086-.413.103-.633.005-.048.006-.182.006-.358V5.392c0-.176-.001-.31-.006-.358a6.026 6.026 0 0 0-.103-.633 5.96 5.96 0 0 0-.212-.567 3.1 3.1 0 0 0-.312-.492A5.96 5.96 0 0 0 13.6 2.04a5.903 5.903 0 0 0-.633-.633A6.026 6.026 0 0 0 12.334.678 5.96 5.96 0 0 0 11.572.006C11.524.001 11.39 0 11.214 0zm.858 1.429h.633c.176 0 .31.001.358.006.22.017.433.05.633.103.2.053.39.124.567.212.178.088.343.193.492.312.15.12.285.253.402.398.12.15.225.31.312.492.088.178.159.367.212.567.053.2.086.413.103.633.005.048.006.182.006.358v13.216c0 .176-.001.31-.006.358-.017.22-.05.433-.103.633-.053.2-.124.39-.212.567-.088.178-.193.343-.312.492-.12.15-.253.285-.398.402-.15.12-.31.225-.492.312-.178.088-.367.159-.567.212-.2.053-.413.086-.633.103-.048.005-.182.006-.358.006h-.633c-.176 0-.31-.001-.358-.006a6.026 6.026 0 0 1-.633-.103 5.96 5.96 0 0 1-.567-.212 3.1 3.1 0 0 1-.492-.312 5.96 5.96 0 0 1-.402-.398 3.1 3.1 0 0 1-.312-.492 5.96 5.96 0 0 1-.212-.567 6.026 6.026 0 0 1-.103-.633c-.005-.048-.006-.182-.006-.358V5.392c0-.176.001-.31.006-.358.017-.22.05-.433.103-.633.053-.2.124-.39.212-.567.088-.178.193-.343.312-.492.12-.15.253-.285.398-.402.15-.12.31-.225.492-.312.178-.088.367-.159.567-.212.2-.053.413-.086.633-.103.048-.005.182-.006.358-.006z"/>
+                    </svg>
+                  </div>
+                  <span className="text-gray-300 text-sm">Next.js</span>
+                </div>
+              </div>
             </div>
           </div>
 
