@@ -173,18 +173,18 @@ const AboutSection = () => {
           <div className="grid grid-cols-2 gap-6 mt-8">
             <div className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
               <h4 className="text-cyan-400 font-semibold mb-2">Frontend Excellence</h4>
-              <p className="text-gray-300 text-sm">React, TypeScript, Laravel, Tailwind CSS, Next.js, HTML, CSS, Wardpress</p>
+              <p className="text-gray-300 text-sm">React, TypeScript, Tailwind CSS, Next.js, HTML, CSS, Wardpress</p>
             </div>
             
             <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
               <h4 className="text-purple-400 font-semibold mb-2">Backend Mastery</h4>
-              <p className="text-gray-300 text-sm">Node.js, Java, MySQL, MongoDB, Spring Boot, PHP Laravel, Next.js</p>
+              <p className="text-gray-300 text-sm">Node.js,N8N Automation, Java, MySQL, MongoDB, Spring Boot, PHP Laravel, Next.js</p>
             </div>
           </div>
 
           <div className="flex space-x-4 mt-8">
             <motion.a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1Dcv0VfMcFRIcbVbh4WaF7WPQ7g1fPyjC/view?usp=sharing"
               className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

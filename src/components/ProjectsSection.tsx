@@ -98,8 +98,19 @@ const projects = [
     image3: "https://ik.imagekit.io/mnfleytnv/image.png?updatedAt=1758103093731",
     image4: "https://ik.imagekit.io/mnfleytnv/ChatGPT%20Image%20Sep%2016,%202025,%2008_39_30%20PM.png?updatedAt=1758102184981",
     tech: ["React", "Next.js", "N8N Automation", "Lovable AI"],
-    github: "https://github.com",
     live: "https://flowlytic.vercel.app/",
+    category: "Full-Stack"
+  },
+  {
+    id: 1,
+    title: "TaskHub – Full-Stack Project & Task Management Platform",
+    description: "Built a scalable, real-time project and task management system using React, Node.js/Express, MongoDB, and Docker. Implemented multi-workspace collaboration, role-based access, live notifications, analytics dashboards, and Kanban boards, with a modern UI (Tailwind CSS, Radix UI) and strong security (JWT, bcrypt, Arcjet) Developed a scalable, full-stack project management system with React 19, Node.js/Express, MongoDB, and Docker. Implemented real-time collaboration with Socket.IO, including live notifications, activity logging, and instant task updates. Built multi-workspace support with role-based access control, project/task lifecycle management, and analytics dashboards. Designed a modern UI using Tailwind CSS & Radix UI, with Kanban drag-and-drop boards, charts, and responsive layouts. Enhanced security with JWT authentication, bcrypt, Arcjet rate limiting, and email verification. Optimized performance through SSR, caching, and database indexing, ensuring scalability and reliability in production.",
+    image: "https://ik.imagekit.io/hifdp9bex/image.png?updatedAt=1759217204086",
+    image2: "https://ik.imagekit.io/hifdp9bex/image.png?updatedAt=1759217272207",
+    image3: "https://ik.imagekit.io/hifdp9bex/image.png?updatedAt=1759217307779",
+    image4: "https://ik.imagekit.io/hifdp9bex/image.png?updatedAt=1759217354400",
+    tech: ["React", "Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Shadcn UI", "JWT", "bcrypt", "Arcjet","Socket.IO","Vercel","Render"],
+    live: "https://taskhub-ten-umber.vercel.app",
     category: "Full-Stack"
   },
   {
@@ -267,15 +278,6 @@ const ProjectModal = ({ project, onClose }) => {
           
 
           <div className="flex space-x-4">
-            <motion.a
-              href={project.github}
-              className="px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-semibold transition-all duration-300 flex items-center space-x-2 hover:shadow-lg hover:shadow-gray-500/25 group"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <CodeIcon />
-              <span>View Code</span>
-            </motion.a>
             <motion.a
               href={project.live}
               target="_blank"
