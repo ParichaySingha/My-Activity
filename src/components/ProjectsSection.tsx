@@ -120,8 +120,7 @@ const projects = [
     description: "An immersive portfolio website featuring Three.js animations, WebGL shaders, and interactive 3D elements.",
     image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=600&fit=crop",
     tech: ["React", "Three.js", "WebGL", "Framer Motion"],
-    github: "https://github.com",
-    live: "https://demo.com",
+    live: "#",
     category: "3D/Creative"
   },
   {
@@ -143,8 +142,7 @@ const projects = [
     description: "Cross-platform mobile application with real-time tracking, payment integration, and social features.",
     image: "https://ik.imagekit.io/mnfleytnv/ChatGPT%20Image%20Sep%2016,%202025,%2008_39_30%20PM.png?updatedAt=1758101002969",
     tech: ["React Native", "Firebase", "Stripe", "Google Maps API"],
-    github: "https://github.com",
-    live: "https://demo.com",
+    live: "#",
     category: "Mobile"
   },
   {
@@ -153,8 +151,7 @@ const projects = [
     description: "Decentralized finance platform with yield farming, staking, and NFT marketplace integration.",
     image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop",
     tech: ["React", "Solidity", "Web3.js", "Ethereum"],
-    github: "https://github.com",
-    live: "https://demo.com",
+    live: "#",
     category: "Blockchain"
   },
   {
@@ -163,8 +160,7 @@ const projects = [
     description: "Comprehensive smart home automation system with voice control, energy monitoring, and security features.",
     image: "https://ik.imagekit.io/mnfleytnv/ChatGPT%20Image%20Sep%2016,%202025,%2008_39_30%20PM.png?updatedAt=1758101002969",
     tech: ["React", "Node.js", "IoT", "AWS", "N8N Automation"],
-    github: "https://github.com",
-    live: "https://demo.com",
+    live: "#",
     category: "N8N Automation"
   }
 ];
