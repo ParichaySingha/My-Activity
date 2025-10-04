@@ -162,10 +162,10 @@ const projects = [
     title: "IoT Smart Home System",
     description: "Comprehensive smart home automation system with voice control, energy monitoring, and security features.",
     image: "https://ik.imagekit.io/mnfleytnv/ChatGPT%20Image%20Sep%2016,%202025,%2008_39_30%20PM.png?updatedAt=1758101002969",
-    tech: ["React", "Node.js", "IoT", "AWS"],
+    tech: ["React", "Node.js", "IoT", "AWS", "N8N Automation"],
     github: "https://github.com",
     live: "https://demo.com",
-    category: "IoT"
+    category: "N8N Automation"
   }
 ];
 
@@ -358,7 +358,7 @@ const ProjectsSection = () => {
   const [filter, setFilter] = useState('All');
   const [showFlowBuilder, setShowFlowBuilder] = useState(false);
 
-  const categories = ['All', 'Full-Stack', '3D/Creative', 'AI/Data', 'Mobile', 'Blockchain', 'IoT'];
+  const categories = ['All', 'Full-Stack', '3D/Creative', 'AI/Data', 'Mobile', 'Blockchain', 'N8N Automation'];
   
   const filteredProjects = filter === 'All' 
     ? projects 
