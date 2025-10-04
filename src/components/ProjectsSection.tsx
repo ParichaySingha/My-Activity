@@ -125,12 +125,15 @@ const projects = [
   },
   {
     id: 3,
-    title: "AI-Powered Analytics Dashboard",
-    description: "Real-time data visualization platform with machine learning insights and predictive analytics.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-    tech: ["React", "Python", "TensorFlow", "D3.js"],
+    title: "AI Analytics Dashboard",
+    description: "Built a modern and responsive AI-powered analytics dashboard using React.js, Tailwind CSS, and Chart.js/Recharts. The dashboard delivers real-time insights with interactive visualizations, clean UI/UX design, and AI-driven data presentation for revenue, user behavior, and performance metrics.",
+    image: "https://sophisticated-plum-abjhusbh7m.edgeone.app/WhatsApp%20Image%202025-10-04%20at%2011.03.06.jpeg",
+    image2: "https://ideological-black-mww7tuvyos.edgeone.app/WhatsApp%20Image%202025-10-04%20at%2011.03.06%20(3).jpeg",
+    image3: "https://maximum-purple-c5jdm1spwz.edgeone.app/WhatsApp%20Image%202025-10-04%20at%2011.03.06%20(2).jpeg",
+    image4: "https://vocational-emerald-z5u1gkxtdd.edgeone.app/WhatsApp%20Image%202025-10-04%20at%2011.03.06%20(1).jpeg",
+    tech: ["React", "Tailwind CSS", "Chart.js", "Recharts"],
     github: "https://github.com",
-    live: "https://demo.com",
+    live: "https://analytics-dashboard-gamma-five.vercel.app",
     category: "AI/Data"
   },
   {
