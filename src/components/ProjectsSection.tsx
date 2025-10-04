@@ -102,7 +102,7 @@ const projects = [
     category: "Full-Stack"
   },
   {
-    id: 1,
+    id: 7,
     title: "TaskHub – Full-Stack Project & Task Management Platform",
     description: "Built a scalable, real-time project and task management system using React, Node.js/Express, MongoDB, and Docker. Implemented multi-workspace collaboration, role-based access, live notifications, analytics dashboards, and Kanban boards, with a modern UI (Tailwind CSS, Radix UI) and strong security (JWT, bcrypt, Arcjet) Developed a scalable, full-stack project management system with React 19, Node.js/Express, MongoDB, and Docker. Implemented real-time collaboration with Socket.IO, including live notifications, activity logging, and instant task updates. Built multi-workspace support with role-based access control, project/task lifecycle management, and analytics dashboards. Designed a modern UI using Tailwind CSS & Radix UI, with Kanban drag-and-drop boards, charts, and responsive layouts. Enhanced security with JWT authentication, bcrypt, Arcjet rate limiting, and email verification. Optimized performance through SSR, caching, and database indexing, ensuring scalability and reliability in production.",
     image: "https://regional-olive-ufgviuis0q.edgeone.app/WhatsApp%20Image%202025-10-04%20at%2011.15.32.jpeg",
