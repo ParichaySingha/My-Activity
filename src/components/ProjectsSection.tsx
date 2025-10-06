@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, time } from 'framer-motion';
 import SkillFlowBuilder from './SkillFlowBuilder';
 
 // Modern SVG Icons
@@ -116,12 +116,16 @@ const projects = [
   },
   {
     id: 2,
-    title: "3D Interactive Portfolio",
-    description: "An immersive portfolio website featuring Three.js animations, WebGL shaders, and interactive 3D elements.",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=600&fit=crop",
-    tech: ["React", "Three.js", "WebGL", "Framer Motion"],
-    live: "#",
-    category: "3D/Creative"
+    title: "Rise Automation Studio",
+    description: "A comprehensive CRM automation platform built with cutting-edge technologies that empowers businesses to create intelligent workflows and chatbots without coding.Tech Stack Highlights: Frontend: React 18 + TypeScript + Vite for lightning-fast development UI/UX: Tailwind CSS + shadcn/ui for modern, accessible design Visual Flow Builder: @xyflow/react for intuitive drag-and-drop automation for scalable infrastructure State Management: Zustand + TanStack Query for optimal performance Deployment: Vercel for seamless CI/CD ✨ Key Features: 🎯 Visual workflow builder with node-based automation 🤖 AI-powered chatbot creation and management 📊 Real-time execution monitoring and analytics 🔗 CRM integration capabilities ⚡ Drag-and-drop interface for non-technical users 💡 What makes this special: Built with modern React patterns, TypeScript for type safety, and a focus on developer experience. The platform combines the power of visual programming with enterprise-grade reliability. Perfect for businesses looking to automate their CRM processes without the complexity of traditional development workflows. #React #TypeScript #Automation #CRM #SaaS #TechInnovation #WebDevelopment #Vercel Just launched Rise Automation Studio - A no-code CRM automation platform! Built with React 18, TypeScript, and modern web technologies. Features visual workflow builder, AI chatbots, and real-time monitoring. 🔧 Tech Stack: React + TypeScript + Vite + Tailwind + Supabase + Vercel ✨ Impact: Empowers businesses to automate CRM processes without coding #React #TypeScript #Automation #CRM #NoCode #WebDev",
+    image: "https://wonderful-purple-gwfctbgifz.edgeone.app/image.png",
+    image2: "https://convenient-white-hzpge21rlt.edgeone.app/image%20(1).png",
+    image3: "https://faint-pink-ltkuslmoot.edgeone.app/image%20(2).png",
+    image4: "https://hon-red-cllgnz1xtg.edgeone.app/image%20(3).png",
+    image5: "https://retired-yellow-9vuqa2mbu3.edgeone.app/image%20(4).png",
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Vercel", "Zustand", "TanStack Query"],
+    live: "https://riseflow.vercel.app",
+    category: "Frontend"
   },
   {
     id: 3,
@@ -354,7 +358,7 @@ const ProjectsSection = () => {
   const [filter, setFilter] = useState('All');
   const [showFlowBuilder, setShowFlowBuilder] = useState(false);
 
-  const categories = ['All', 'Full-Stack', '3D/Creative', 'AI/Data', 'Mobile', 'Blockchain', 'N8N Automation'];
+  const categories = ['All', 'Full-Stack', 'Frontend', 'AI/Data', 'Mobile', 'Blockchain', 'N8N Automation'];
   
   const filteredProjects = filter === 'All' 
     ? projects 
