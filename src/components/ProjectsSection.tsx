@@ -128,6 +128,19 @@ const projects = [
     category: "Frontend"
   },
   {
+    id: 8,
+    title: " Engage Grow AI - A Comprehensive Social Media Management & AI-Powered Content Creation Platform",
+    description: "Built with a modern tech stack including React 18, TypeScript, Vite, and Tailwind CSS, this platform revolutionizes how businesses manage their social media presence. 🎯 Key Features: AI-Powered Content Generation - Leveraging advanced AI to create engaging content across multiple platforms Visual Workflow Builder - Drag-and-drop interface using React Flow for automated content workflows Multi-Platform Management - Seamless integration with Facebook, Instagram, LinkedIn, TikTok, YouTube, and more Advanced Analytics Dashboard - Real-time performance tracking with interactive charts and insights Smart Campaign Management - A/B testing, audience targeting, and automated ad optimization Content Calendar & Scheduling - Intelligent scheduling with optimal posting times Voice AI Integration - Cutting-edge voice AI capabilities for enhanced user experience 🛠️ Technical Highlights: Frontend: React 18 + TypeScript + Vite for lightning-fast development UI/UX: shadcn/ui + Radix UI + Framer Motion for beautiful, accessible components State Management: TanStack Query + React Hook Form for robust data handling Visualization: Recharts for comprehensive analytics Workflow Engine: React Flow for complex automation workflows AI Integration: Vapi AI for voice capabilities Styling: Tailwind CSS with custom design system 💡 Impact: This platform streamlines social media management by combining AI automation with intuitive design, helping businesses scale their digital presence efficiently. 🔧 Built with: React, TypeScript, Vite, Tailwind CSS, shadcn/ui, React Flow, TanStack Query, Framer Motion, Recharts, and more. #ReactJS #TypeScript #AI #SocialMediaManagement #WebDevelopment #FrontendDevelopment #TechInnovation #DigitalMarketing #Automation.",
+    image: "https://statutory-gray-irctwdpcdv.edgeone.app/image.png",
+    image2: "https://weekly-azure-thze9ienun.edgeone.app/image%20(1).png",
+    image3: "https://united-aqua-6w1tegt556.edgeone.app/image%20(2).png",
+    image4: "https://static-maroon-vtkciembfj.edgeone.app/image%20(3).png",
+    image5: "https://inquisitive-ivory-vvgscrlrzp.edgeone.app/image%20(4).png",
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Vercel", "Zustand", "TanStack Query", "Recharts", "Framer Motion"],
+    live: "https://aihub-alpha.vercel.app",
+    category: "Frontend"
+  },
+  {
     id: 3,
     title: "AI Analytics Dashboard",
     description: "Built a modern and responsive AI-powered analytics dashboard using React.js, Tailwind CSS, and Chart.js/Recharts. The dashboard delivers real-time insights with interactive visualizations, clean UI/UX design, and AI-driven data presentation for revenue, user behavior, and performance metrics.",
