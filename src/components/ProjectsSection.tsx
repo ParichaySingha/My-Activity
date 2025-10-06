@@ -141,6 +141,18 @@ const projects = [
     category: "Frontend"
   },
   {
+    id: 9,
+    title: "Uniformat E-commerce Platform",
+    description: "This project is built using React 19.1.0 as the core frontend framework, leveraging modern JavaScript ES6+ features with functional components and React hooks for efficient state management. The application uses Redux 5.0.1 for predictable state management across complex e-commerce workflows, with React Router DOM 7.6.2 handling client-side navigation between multiple screens including home, products, cart, and checkout flows.",
+    image: "https://mass-violet-pmdeaibpe6.edgeone.app/WhatsApp%20Image%202025-10-06%20at%2010.14.15%20(2).jpeg",
+    image2: "https://tremendous-blush-se2kyhxatv.edgeone.app/WhatsApp%20Image%202025-10-06%20at%2010.14.15%20(1).jpeg",
+    image3: "https://confused-emerald-wqqxeybjp1.edgeone.app/WhatsApp%20Image%202025-10-06%20at%2010.14.49.jpeg",
+    image4: "https://super-indigo-carjkfpli3.edgeone.app/WhatsApp%20Image%202025-10-06%20at%2010.14.15.jpeg",
+    tech: ["React", "Vite", "Tailwind CSS", "Vercel", "Redux", "React Router DOM"],
+    live: "https://uniformat-hazel.vercel.app",
+    category: "Frontend"
+  },
+  {
     id: 3,
     title: "AI Analytics Dashboard",
     description: "Built a modern and responsive AI-powered analytics dashboard using React.js, Tailwind CSS, and Chart.js/Recharts. The dashboard delivers real-time insights with interactive visualizations, clean UI/UX design, and AI-driven data presentation for revenue, user behavior, and performance metrics.",
