@@ -185,11 +185,13 @@ const projects = [
   },
   {
     id: 6,
-    title: "IoT Smart Home System",
-    description: "Comprehensive smart home automation system with voice control, energy monitoring, and security features.",
-    image: "https://ik.imagekit.io/mnfleytnv/ChatGPT%20Image%20Sep%2016,%202025,%2008_39_30%20PM.png?updatedAt=1758101002969",
-    tech: ["React", "Node.js", "IoT", "AWS", "N8N Automation"],
-    live: "#",
+    title: "Smart Image Generation Workflow | n8n + OpenAI + Nano Banana",
+    description: "Transform your workflow automation game with this complete tutorial on creating AI agents using N8N and the Nano Banana image model. This guide shows you exactly how to set up an AI workflow using Nano Banana in N8N, integrate the Nano Banana image generation API, and build automation pipelines that can generate content, process images, and scale like crazy.",
+    image: "https://industrial-ivory-ph027phjw9.edgeone.app/image%20(1).png",
+    image2: "https://resonant-amaranth-j506jig0tt.edgeone.app/image.png",
+    image3: "https://straight-aqua-wmk5ydw3mg.edgeone.app/merged_n8n_images.png",
+    tech: ["n8n", "OpenAI", "Nano Banana", "ImgBB", "N8N Automation"],
+    live: "https://www.linkedin.com/posts/parichay-singha-ba2a66194_automated-image-genarate-ai-workflow-n8n-activity-7381246381627387904-qS2f?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC24DSoBNI3mFB94r0soCIUeMtHI4-YW7uY",
     category: "N8N Automation"
   }
 ];
