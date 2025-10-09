@@ -166,24 +166,6 @@ const projects = [
     category: "AI/Data"
   },
   {
-    id: 4,
-    title: "Mobile Food Delivery App",
-    description: "Cross-platform mobile application with real-time tracking, payment integration, and social features.",
-    image: "https://ik.imagekit.io/mnfleytnv/ChatGPT%20Image%20Sep%2016,%202025,%2008_39_30%20PM.png?updatedAt=1758101002969",
-    tech: ["React Native", "Firebase", "Stripe", "Google Maps API"],
-    live: "#",
-    category: "Mobile"
-  },
-  {
-    id: 5,
-    title: "Blockchain DeFi Platform",
-    description: "Decentralized finance platform with yield farming, staking, and NFT marketplace integration.",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop",
-    tech: ["React", "Solidity", "Web3.js", "Ethereum"],
-    live: "#",
-    category: "Blockchain"
-  },
-  {
     id: 6,
     title: "Smart Image Generation Workflow | n8n + OpenAI + Nano Banana",
     description: "Transform your workflow automation game with this complete tutorial on creating AI agents using N8N and the Nano Banana image model. This guide shows you exactly how to set up an AI workflow using Nano Banana in N8N, integrate the Nano Banana image generation API, and build automation pipelines that can generate content, process images, and scale like crazy.",
@@ -395,7 +377,7 @@ const ProjectsSection = () => {
   const [filter, setFilter] = useState('All');
   const [showFlowBuilder, setShowFlowBuilder] = useState(false);
 
-  const categories = ['All', 'Full-Stack', 'Frontend', 'AI/Data', 'Mobile', 'Blockchain', 'N8N Automation'];
+  const categories = ['All', 'Full-Stack', 'Frontend', 'AI/Data', 'N8N Automation'];
   
   const filteredProjects = filter === 'All' 
     ? projects 
