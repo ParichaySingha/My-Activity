@@ -193,6 +193,16 @@ const projects = [
     tech: ["n8n", "OpenAI", "Nano Banana", "ImgBB", "N8N Automation"],
     live: "https://www.linkedin.com/posts/parichay-singha-ba2a66194_automated-image-genarate-ai-workflow-n8n-activity-7381246381627387904-qS2f?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC24DSoBNI3mFB94r0soCIUeMtHI4-YW7uY",
     category: "N8N Automation"
+  },
+  {
+    id: 10,
+    title: "AI-Powered Video Script Automation using n8n + OpenAI",
+    description: "Developed an advanced automation workflow using n8n, OpenAI, and API integrations to automatically generate viral video scripts for Instagram Reels and LinkedIn content. The system analyzes user input, creates full-length creative scripts, converts them into structured HTML with CSS styling, and exports them as professional PDF guides — all without manual intervention. Key Highlights: Automated workflow: Form Trigger → HTTP Request → AI Analysis → Script Generation → HTML + PDF Export Dual AI agents (OpenAI & Gemini) for creative writing and content analysis End-to-end Markdown → HTML → PDF automation with styling and structure Parallel processing and data merging for optimized performance Fully scalable, modular, and reusable architecture Impact: Reduced manual scriptwriting time by over 90%, enabling creators and marketers to instantly generate polished, ready-to-publish video scripts.",
+    image: "https://pleased-green-ifxo7i90kl.edgeone.app/WhatsApp%20Image%202025-10-09%20at%2013.00.59.jpeg",
+    image2: "https://overseas-copper-bnvtcpegbo.edgeone.app/WhatsApp%20Image%202025-10-09%20at%2013.01.07.jpeg",
+    tech: ["n8n", "OpenAI API", "Gemini API", "Markdown", "HTML", "CSS", "PDF Generation", "Workflow Automation"],
+    live: "https://www.linkedin.com/posts/parichay-singha-ba2a66194_ai-automation-n8n-activity-7381955139722477568-P9uu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC24DSoBNI3mFB94r0soCIUeMtHI4-YW7uY",
+    category: "N8N Automation"
   }
 ];
 
